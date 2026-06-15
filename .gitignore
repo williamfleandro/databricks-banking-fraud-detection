@@ -1,0 +1,19 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Environment
+.env
+
+# Local datasets
+data/raw/*.csv
+data/raw/*.zip
+data/raw/*.parquet
+
+# Databricks
+.databricks/
+.bundle/
+
+# OS
+.DS_Store
