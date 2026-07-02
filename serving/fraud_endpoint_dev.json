@@ -1,0 +1,22 @@
+{
+  "name": "fraud-detection-endpoint-dev",
+  "config": {
+    "served_entities": [
+      {
+        "name": "fraud_detection_champion",
+        "entity_name": "mlops_dev.fraud.fraud_detection_serving_model",
+        "entity_version": "4",
+        "workload_size": "Small",
+        "scale_to_zero_enabled": true
+      }
+    ],
+    "traffic_config": {
+      "routes": [
+        {
+          "served_model_name": "fraud_detection_champion",
+          "traffic_percentage": 100
+        }
+      ]
+    }
+  }
+}
