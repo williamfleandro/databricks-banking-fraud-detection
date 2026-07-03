@@ -12,7 +12,7 @@ O objetivo é demonstrar uma arquitetura reprodutível de Machine Learning em m�
 |---|---:|---:|---:|---:|---:|
 | DEV | Concluído | Registrado | Validada | READY | Validada |
 | ACC | Concluído | Registrado | Validada | READY | Validada |
-| PROD | Concluído | Registrado | Validada | READY | Pendente de teste final |
+| PROD | Concluído | Registrado | Validada | READY | Validada |
 
 ### Resultado atual
 
@@ -29,6 +29,9 @@ O objetivo é demonstrar uma arquitetura reprodutível de Machine Learning em m�
 - Serving PROD: `mlops_production.fraud.fraud_detection_serving_model`, versão `2`
 - Endpoint PROD: `fraud-detection-endpoint-prod`
 - Estado PROD: `READY / DEPLOYMENT_READY`
+- API REST PROD: `HTTP 200`
+- Cliente Python PROD: validado
+- Evidências PROD: salvas em `serving/results/`
 
 ---
 
@@ -588,9 +591,22 @@ Deploy PROD
 
 ---
 
+## Projeto concluído
+
+O pipeline foi validado de ponta a ponta nos três ambientes:
+
+```text
+DEV  -> pipeline, registry, serving e API REST validados
+ACC  -> pipeline, registry, serving e API REST validados
+PROD -> pipeline, registry, serving e API REST validados
+```
+
+O projeto está pronto para apresentação em portfólio técnico, demonstrando implementação prática de Lakehouse, MLOps, governança, promoção entre ambientes e inferência online em produção.
+
+---
+
 ## Próximos passos
 
-- validar a API REST de PROD;
 - adicionar testes automatizados de regressão online;
 - adicionar um Golden Dataset para regressão de ML;
 - implementar `OPTIMIZE`, `VACUUM` e `ANALYZE TABLE`;
