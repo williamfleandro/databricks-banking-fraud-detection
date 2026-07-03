@@ -1,0 +1,58 @@
+{
+  "config": {
+    "config_version": 1,
+    "served_entities": [
+      {
+        "creation_timestamp": 1783042606000,
+        "creator": "williamfleandro@gmail.com",
+        "entity_name": "mlops_production.fraud.fraud_detection_serving_model",
+        "entity_version": "2",
+        "name": "fraud_detection_champion",
+        "scale_to_zero_enabled": true,
+        "state": {
+          "deployment": "DEPLOYMENT_READY",
+          "deployment_state_message": ""
+        },
+        "workload_size": "Small",
+        "workload_type": "CPU"
+      }
+    ],
+    "served_models": [
+      {
+        "creation_timestamp": 1783042606000,
+        "creator": "williamfleandro@gmail.com",
+        "model_name": "mlops_production.fraud.fraud_detection_serving_model",
+        "model_version": "2",
+        "name": "fraud_detection_champion",
+        "scale_to_zero_enabled": true,
+        "state": {
+          "deployment": "DEPLOYMENT_READY",
+          "deployment_state_message": ""
+        },
+        "workload_size": "Small",
+        "workload_type": "CPU"
+      }
+    ],
+    "traffic_config": {
+      "routes": [
+        {
+          "served_entity_name": "fraud_detection_champion",
+          "served_model_name": "fraud_detection_champion",
+          "traffic_percentage": 100
+        }
+      ]
+    }
+  },
+  "creation_timestamp": 1783042606000,
+  "creator": "williamfleandro@gmail.com",
+  "description": "",
+  "id": "658b4bb3328e4fe9ba80debd703ecdbb",
+  "last_updated_timestamp": 1783042606000,
+  "name": "fraud-detection-endpoint-prod",
+  "permission_level": "CAN_MANAGE",
+  "route_optimized": false,
+  "state": {
+    "config_update": "NOT_UPDATING",
+    "ready": "READY"
+  }
+}

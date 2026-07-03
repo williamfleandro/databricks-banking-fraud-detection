@@ -1,0 +1,2 @@
+{"predictions": [{"prediction": 1, "probability_fraud": 0.7916666666666666, "risk_level": "high"}]}
+HTTP_STATUS:200
